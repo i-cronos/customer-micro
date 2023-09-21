@@ -1,7 +1,0 @@
-pe/ibk/cpe/customer/domain/CustomerApplication.class
-pe/ibk/cpe/customer/domain/rest/dto/CreateCustomerRequestDto.class
-pe/ibk/cpe/customer/domain/rest/TestController.class
-pe/ibk/cpe/customer/domain/rest/dto/CustomerMapper.class
-pe/ibk/cpe/customer/domain/config/CustomerUseCaseConfig.class
-pe/ibk/cpe/customer/domain/rest/dto/CreateCustomerResponseDto.class
-pe/ibk/cpe/customer/domain/rest/CustomerRestController.class
