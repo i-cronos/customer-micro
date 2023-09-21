@@ -1,4 +1,4 @@
-/.idea/**
+/.idea
 /customer-application/target/
 /customer-container/target/
 /customer-domain/target/
