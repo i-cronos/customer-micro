@@ -1,0 +1,11 @@
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/model/Address.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/services/DeleteCustomerService.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/ports/inbound/DeleteCustomerUseCase.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/ports/outbound/GetCustomerPort.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/ports/outbound/DeleteCustomerPort.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/services/GetCustomerService.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/model/Customer.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/ports/inbound/GetCustomerUseCase.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/ports/outbound/CreateCustomerPort.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/services/CreateCustomerService.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-domain/src/main/java/pe/ibk/cpe/customer/domain/ports/inbound/CreateCustomerUseCase.java

@@ -1,0 +1,6 @@
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-infrastructure/src/main/java/pe/ibk/cpe/customer/infrastructure/mysql/DeleteCustomerAdapter.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-infrastructure/src/main/java/pe/ibk/cpe/customer/infrastructure/mysql/repo/CustomerEntityMapper.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-infrastructure/src/main/java/pe/ibk/cpe/customer/infrastructure/mysql/CreateCustomerAdapter.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-infrastructure/src/main/java/pe/ibk/cpe/customer/infrastructure/mysql/GetCustomerAdapter.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-infrastructure/src/main/java/pe/ibk/cpe/customer/infrastructure/mysql/repo/CustomerRepository.java
+/home/cronos/projects/java/hexagonal/example/customer-micro/customer-infrastructure/src/main/java/pe/ibk/cpe/customer/infrastructure/mysql/repo/CustomerEntity.java
