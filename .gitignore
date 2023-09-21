@@ -1,0 +1,5 @@
+/.idea/
+/customer-application/target/
+/customer-container/target/
+/customer-domain/target/
+/customer-infrastructure/target/
