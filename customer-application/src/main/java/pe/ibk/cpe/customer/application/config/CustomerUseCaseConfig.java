@@ -1,4 +1,4 @@
-package pe.ibk.cpe.customer.domain.config;
+package pe.ibk.cpe.customer.application.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
