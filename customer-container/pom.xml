@@ -39,7 +39,7 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>copy-dependencies-a</id>
+                        <id>copy-dependencies-libs</id>
                         <phase>prepare-package</phase>
                         <goals>
                             <goal>copy-dependencies</goal>
@@ -59,7 +59,7 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>copy-dependencies-b</id>
+                        <id>copy-dependencies-app</id>
                         <phase>prepare-package</phase>
                         <goals>
                             <goal>copy-dependencies</goal>
