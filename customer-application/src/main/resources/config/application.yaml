@@ -1,0 +1,4 @@
+app:
+  info:
+    name: "Customer microservice"
+    env: "None"
