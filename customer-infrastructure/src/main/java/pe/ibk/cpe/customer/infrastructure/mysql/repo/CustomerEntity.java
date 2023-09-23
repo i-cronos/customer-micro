@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 public class CustomerEntity {
     private String id;
     private String businessName;
+    private String societyType;
     private String documentType;
     private String documentNumber;
     private LocalDateTime creationDate;

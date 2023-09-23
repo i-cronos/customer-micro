@@ -1,6 +1,6 @@
-package pe.ibk.cpe.customer.domain.services;
+package pe.ibk.cpe.customer.domain.service;
 
-import pe.ibk.cpe.customer.domain.model.Customer;
+import pe.ibk.cpe.customer.domain.model.entity.Customer;
 import pe.ibk.cpe.customer.domain.ports.inbound.CreateCustomerUseCase;
 import pe.ibk.cpe.customer.domain.ports.outbound.CreateCustomerPort;
 

@@ -1,16 +1,20 @@
 package pe.ibk.cpe.customer.infrastructure.mysql.repo;
 
 import org.springframework.stereotype.Component;
-import pe.ibk.cpe.customer.domain.model.Customer;
+import pe.ibk.cpe.customer.domain.model.entity.Customer;
+import pe.ibk.cpe.customer.domain.model.valueobject.*;
+
+import java.util.UUID;
 
 @Component
 public class CustomerEntityMapper {
 
     public CustomerEntity map(Customer customer) {
         CustomerEntity customerEntity = new CustomerEntity();
-        customerEntity.setBusinessName(customer.getBusinessName());
-        customerEntity.setDocumentType(customer.getDocumentType());
-        customerEntity.setDocumentNumber(customer.getDocumentNumber());
+        customerEntity.setBusinessName(customer.getBusinessName().getName());
+        customerEntity.setSocietyType(customer.getBusinessName().getSocietyType().name());
+        customerEntity.setDocumentType(customer.getDocument().getDocumentType().name());
+        customerEntity.setDocumentNumber(customer.getDocument().getDocumentNumber());
 
         return customerEntity;
     }
@@ -18,10 +22,9 @@ public class CustomerEntityMapper {
 
     public Customer map(CustomerEntity customerEntity) {
         Customer customer = new Customer();
-        customer.setId(customerEntity.getId());
-        customer.setBusinessName(customerEntity.getBusinessName());
-        customer.setDocumentType(customerEntity.getDocumentType());
-        customer.setDocumentNumber(customerEntity.getDocumentNumber());
+        customer.setId(new CustomerId(UUID.fromString(customerEntity.getId())));
+        customer.setBusinessName(new BusinessName(SocietyType.valueOf(customerEntity.getSocietyType()), customerEntity.getBusinessName()));
+        customer.setDocument(new Document(DocumentType.valueOf(customerEntity.getDocumentType()), customerEntity.getDocumentNumber()));
 
         return customer;
     }

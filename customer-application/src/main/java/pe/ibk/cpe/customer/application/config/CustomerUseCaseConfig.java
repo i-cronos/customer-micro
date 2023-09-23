@@ -8,9 +8,9 @@ import pe.ibk.cpe.customer.domain.ports.inbound.GetCustomerUseCase;
 import pe.ibk.cpe.customer.domain.ports.outbound.CreateCustomerPort;
 import pe.ibk.cpe.customer.domain.ports.outbound.DeleteCustomerPort;
 import pe.ibk.cpe.customer.domain.ports.outbound.GetCustomerPort;
-import pe.ibk.cpe.customer.domain.services.CreateCustomerService;
-import pe.ibk.cpe.customer.domain.services.DeleteCustomerService;
-import pe.ibk.cpe.customer.domain.services.GetCustomerService;
+import pe.ibk.cpe.customer.domain.service.CreateCustomerService;
+import pe.ibk.cpe.customer.domain.service.DeleteCustomerService;
+import pe.ibk.cpe.customer.domain.service.GetCustomerService;
 
 @Configuration
 public class CustomerUseCaseConfig {
