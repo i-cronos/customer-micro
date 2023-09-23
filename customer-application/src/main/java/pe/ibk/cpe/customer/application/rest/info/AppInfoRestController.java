@@ -9,7 +9,7 @@ import pe.ibk.cpe.customer.application.rest.info.dto.AppInfoMapper;
 import pe.ibk.cpe.customer.application.rest.info.dto.AppInfoResponseDto;
 
 @RestController
-@RequestMapping("api/v1/info")
+@RequestMapping("/api/v1/info")
 @AllArgsConstructor
 public class AppInfoRestController {
     private final AppInfoMapper appInfoMapper;
