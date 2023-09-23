@@ -1,4 +1,4 @@
-package pe.ibk.cpe.customer.application.rest.dto;
+package pe.ibk.cpe.customer.application.rest.customer.dto;
 
 import org.springframework.stereotype.Component;
 import pe.ibk.cpe.customer.domain.model.Customer;

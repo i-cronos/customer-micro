@@ -1,4 +1,4 @@
-package pe.ibk.cpe.customer.application.rest.dto;
+package pe.ibk.cpe.customer.application.rest.customer.dto;
 
 import lombok.Getter;
 import lombok.Setter;
