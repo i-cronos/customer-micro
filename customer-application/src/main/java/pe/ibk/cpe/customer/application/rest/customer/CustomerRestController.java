@@ -21,7 +21,6 @@ public class CustomerRestController {
 
     @PostMapping
     public ResponseEntity<CreateCustomerResponseDto> create(@RequestBody CreateCustomerRequestDto createCustomerRequestDto) {
-        System.out.println("createCustomerRequestDto :: " + createCustomerRequestDto);
         Customer request = customerMapper.map(createCustomerRequestDto);
         Customer response = createCustomerUseCase.apply(request);
 
