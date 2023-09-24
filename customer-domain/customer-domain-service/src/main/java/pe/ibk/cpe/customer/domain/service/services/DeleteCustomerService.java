@@ -1,7 +1,7 @@
 package pe.ibk.cpe.customer.domain.service.services;
 
 
-import pe.ibk.cpe.customer.domain.core.entity.Customer;
+import pe.ibk.cpe.customer.domain.core.valueobject.CustomerId;
 import pe.ibk.cpe.customer.domain.service.ports.inbound.DeleteCustomerUseCase;
 import pe.ibk.cpe.customer.domain.service.ports.outbound.DeleteCustomerPort;
 
@@ -14,8 +14,8 @@ public class DeleteCustomerService implements DeleteCustomerUseCase {
     }
 
     @Override
-    public boolean apply(Customer customer) {
-        return deleteCustomerPort.apply(customer);
+    public boolean apply(CustomerId customerId) {
+        return deleteCustomerPort.apply(customerId);
     }
 
 }
