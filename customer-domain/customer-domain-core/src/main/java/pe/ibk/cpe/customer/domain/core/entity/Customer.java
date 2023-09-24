@@ -83,18 +83,7 @@ public class Customer extends AggregateRoot<CustomerId> {
         if (Objects.isNull(document))
             throw new DomainException("Null document");
 
-        if (Objects.isNull(document.getDocumentType()))
-            throw new DomainException("Null document type");
-
-        if (Objects.isNull(document.getDocumentNumber()))
-            throw new DomainException("Null document number");
-
-        if (document.getDocumentType().equals(DocumentType.DNI) && document.getDocumentNumber().length() != DocumentType.DNI.getSize())
-            throw new DomainException("No valid document, required size: " + DocumentType.DNI.getSize());
-
-        if (document.getDocumentType().equals(DocumentType.RUC) && document.getDocumentNumber().length() != DocumentType.RUC.getSize())
-            throw new DomainException("No valid document, required size: " + DocumentType.RUC.getSize());
-
+        document.validate();
     }
 
     private void validateAddress() {
@@ -122,6 +111,16 @@ public class Customer extends AggregateRoot<CustomerId> {
 
         if (!Constant.MAX_SHAREHOLDERS_PERCENTAGE.equals(sum))
             throw new DomainException("Shareholders percentage is not 100%, sum : " + sum + "%");
+
+        long size = shareholders.stream()
+                .filter(Objects::nonNull)
+                .count();
+
+        if (size != shareholders.size())
+            throw new DomainException("Not valid shareholder list");
+
+        shareholders.forEach(Shareholder::validate);
+
     }
 
 }

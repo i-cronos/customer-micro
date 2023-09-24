@@ -8,24 +8,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pe.ibk.cpe.customer.application.rest.customer.dto.CreateCustomerRequestDto;
 import pe.ibk.cpe.customer.application.rest.customer.dto.CreateCustomerResponseDto;
-import pe.ibk.cpe.customer.application.rest.customer.dto.CustomerMapper;
-import pe.ibk.cpe.customer.domain.core.entity.Customer;
-import pe.ibk.cpe.customer.domain.service.ports.inbound.CreateCustomerUseCase;
+import pe.ibk.cpe.customer.application.rest.customer.facade.CreateCustomerFacade;
 
 @RestController
 @RequestMapping("api/v1/customer")
 @AllArgsConstructor
 public class CustomerRestController {
-    private final CreateCustomerUseCase createCustomerUseCase;
-    private final CustomerMapper customerMapper;
+    private final CreateCustomerFacade createCustomerFacade;
 
     @PostMapping
     public ResponseEntity<CreateCustomerResponseDto> create(@RequestBody CreateCustomerRequestDto createCustomerRequestDto) {
-        Customer request = customerMapper.map(createCustomerRequestDto);
-        Customer response = createCustomerUseCase.apply(request);
-
-        CreateCustomerResponseDto responseDto = customerMapper.map(response);
-
-        return ResponseEntity.ok(responseDto);
+        return ResponseEntity.ok(createCustomerFacade.create(createCustomerRequestDto));
     }
 }
