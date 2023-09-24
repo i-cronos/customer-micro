@@ -14,7 +14,11 @@ import org.springframework.context.annotation.ComponentScan;
         DataSourceAutoConfiguration.class,
         DataSourceTransactionManagerAutoConfiguration.class,
         HibernateJpaAutoConfiguration.class})
-@ComponentScan(basePackages = "pe.ibk.cpe.customer")
+@ComponentScan(basePackages = {
+        "pe.ibk.cpe.customer.infrastructure.database.mysql",
+        "pe.ibk.cpe.customer.infrastructure.rest",
+        "pe.ibk.cpe.customer.infrastructure.email"
+})
 public class CustomerApplication {
     public static void main(String[] args) {
         SpringApplication.run(CustomerApplication.class, args);

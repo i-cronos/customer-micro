@@ -2,7 +2,7 @@ package pe.ibk.cpe.customer.application.rest.info.dto;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
-import pe.ibk.cpe.customer.application.property.AppInfoProperties;
+import pe.ibk.cpe.customer.application.rest.property.AppInfoProperties;
 
 import java.time.LocalDateTime;
 

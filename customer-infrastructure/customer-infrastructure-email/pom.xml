@@ -8,10 +8,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>customer-infrastructure-rest</artifactId>
+    <artifactId>customer-infrastructure-email</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>customer-infrastructure-rest</name>
+    <name>customer-infrastructure-email</name>
 
     <properties>
     </properties>
@@ -22,5 +22,4 @@
             <artifactId>customer-domain-service</artifactId>
         </dependency>
     </dependencies>
-
 </project>

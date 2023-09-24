@@ -23,6 +23,7 @@
         <module>customer-infrastructure-database</module>
         <module>customer-infrastructure-rest</module>
         <module>customer-infrastructure-sftp</module>
+        <module>customer-infrastructure-email</module>
     </modules>
 
     <dependencies>
