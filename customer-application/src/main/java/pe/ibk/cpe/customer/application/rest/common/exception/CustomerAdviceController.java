@@ -22,7 +22,6 @@ public class CustomerAdviceController {
                 .message(exception.getMessage())
                 .status(HttpStatus.INTERNAL_SERVER_ERROR.name())
                 .build();
-
     }
 
     @Getter
