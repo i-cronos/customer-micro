@@ -1,6 +1,7 @@
-# Project creation:
+# Project creation
+***
 
-## Create from console:
+## Create from console
 
 > * mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-micro
 >    * mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-application
@@ -15,6 +16,7 @@
 >        * mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-sftp
 
 ## Example
+***
 ### Get project info
 > ` curl -XGET http://localhost:8080/api/v1/info -H "Accept-Type: application/json" `
 
