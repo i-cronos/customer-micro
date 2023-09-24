@@ -1,3 +1,5 @@
+Project creation:
+
 pom: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-micro
       pom: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-container
       jar: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-application
