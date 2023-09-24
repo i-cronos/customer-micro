@@ -19,13 +19,12 @@ public class CustomerAdviceController {
     @ExceptionHandler({DomainException.class})
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public Error handle(DomainException exception, WebRequest webRequest) {
-        Error error = Error.builder()
+        return Error.builder()
                 .current(LocalDateTime.now())
                 .message(exception.getMessage())
                 .status(HttpStatus.INTERNAL_SERVER_ERROR.name())
                 .build();
 
-        return error;
     }
 
     @Getter
