@@ -1,15 +1,13 @@
 Project creation:
 
-pom: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-micro
-         jar: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-application
-         pom: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-container
-
-         pom: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-domain
-                  jar: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-domain-core
-                  jar: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-domain-service
-
-         pom: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure
-                  jar: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-database
-                  jar: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-rest
-                  jar: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-email
-                  jar: mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-sftp
+mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-micro
+    mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-application
+    mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-container
+    mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-domain
+        mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-domain-core
+        mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-domain-service
+    mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure
+        mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-database
+        mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-rest
+        mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-email
+        mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-sftp
