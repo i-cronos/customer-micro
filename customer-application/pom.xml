@@ -20,6 +20,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>pe.ibk.cpe</groupId>
             <artifactId>customer-domain-core</artifactId>
@@ -33,8 +39,12 @@
             <artifactId>customer-infrastructure-database</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>pe.ibk.cpe</groupId>
+            <artifactId>customer-infrastructure-rest</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>pe.ibk.cpe</groupId>
+            <artifactId>customer-infrastructure-email</artifactId>
         </dependency>
     </dependencies>
 

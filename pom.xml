@@ -63,6 +63,11 @@
                 <artifactId>customer-infrastructure-sftp</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>pe.ibk.cpe</groupId>
+                <artifactId>customer-infrastructure-email</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <!-- spring framework -->
             <dependency>

@@ -1,5 +1,7 @@
 package pe.ibk.cpe.customer.application.rest.customer;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,8 +22,10 @@ public class CustomerRestController {
     private final CustomerMapper customerMapper;
 
     @PostMapping
-    public ResponseEntity<CreateCustomerResponseDto> create(@RequestBody CreateCustomerRequestDto createCustomerRequestDto) {
+    public ResponseEntity<CreateCustomerResponseDto> create(@RequestBody CreateCustomerRequestDto createCustomerRequestDto) throws JsonProcessingException {
+        System.out.println("BEFORE:\n" + new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(createCustomerRequestDto));
         Customer request = customerMapper.map(createCustomerRequestDto);
+        System.out.println("AFTER:\n" + new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(request));
         Customer response = createCustomerUseCase.apply(request);
 
         CreateCustomerResponseDto responseDto = customerMapper.map(response);

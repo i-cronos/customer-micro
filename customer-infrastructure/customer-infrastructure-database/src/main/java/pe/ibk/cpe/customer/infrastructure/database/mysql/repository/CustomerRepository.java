@@ -11,6 +11,7 @@ public class CustomerRepository {
     public CustomerEntity save(CustomerEntity customerEntity) {
         CustomerEntity entity = new CustomerEntity();
         entity.setId(UUID.randomUUID().toString());
+        entity.setSocietyType(customerEntity.getSocietyType());
         entity.setBusinessName(customerEntity.getBusinessName());
         entity.setDocumentType(customerEntity.getDocumentType());
         entity.setDocumentNumber(customerEntity.getDocumentNumber());

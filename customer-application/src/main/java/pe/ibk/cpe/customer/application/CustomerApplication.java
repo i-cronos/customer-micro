@@ -15,7 +15,8 @@ import org.springframework.context.annotation.ComponentScan;
         DataSourceTransactionManagerAutoConfiguration.class,
         HibernateJpaAutoConfiguration.class})
 @ComponentScan(basePackages = {
-        "pe.ibk.cpe.customer.infrastructure.database.mysql",
+        "pe.ibk.cpe.customer.application.rest",
+        "pe.ibk.cpe.customer.infrastructure.database",
         "pe.ibk.cpe.customer.infrastructure.rest",
         "pe.ibk.cpe.customer.infrastructure.email"
 })

@@ -11,8 +11,8 @@ public class CustomerEntityMapper {
 
     public CustomerEntity map(Customer customer) {
         CustomerEntity customerEntity = new CustomerEntity();
-        customerEntity.setBusinessName(customer.getBusinessName().getName());
         customerEntity.setSocietyType(customer.getBusinessName().getSocietyType().name());
+        customerEntity.setBusinessName(customer.getBusinessName().getName());
         customerEntity.setDocumentType(customer.getDocument().getDocumentType().name());
         customerEntity.setDocumentNumber(customer.getDocument().getDocumentNumber());
 
