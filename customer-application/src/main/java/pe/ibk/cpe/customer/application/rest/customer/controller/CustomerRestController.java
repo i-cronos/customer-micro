@@ -1,4 +1,4 @@
-package pe.ibk.cpe.customer.application.rest.customer;
+package pe.ibk.cpe.customer.application.rest.customer.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
