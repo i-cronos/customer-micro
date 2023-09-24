@@ -1,0 +1,6 @@
+pe/ibk/cpe/customer/infrastructure/database/mysql/CreateCustomerAdapter.class
+pe/ibk/cpe/customer/infrastructure/database/mysql/repository/CustomerEntityMapper.class
+pe/ibk/cpe/customer/infrastructure/database/mysql/repository/CustomerEntity.class
+pe/ibk/cpe/customer/infrastructure/database/mysql/repository/CustomerRepository.class
+pe/ibk/cpe/customer/infrastructure/database/mysql/GetCustomerAdapter.class
+pe/ibk/cpe/customer/infrastructure/database/mysql/DeleteCustomerAdapter.class

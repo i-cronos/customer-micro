@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pe.ibk.cpe.customer.application.rest.customer.dto.CreateCustomerRequestDto;
-import pe.ibk.cpe.customer.domain.model.entity.Customer;
-import pe.ibk.cpe.customer.domain.ports.inbound.CreateCustomerUseCase;
 import pe.ibk.cpe.customer.application.rest.customer.dto.CreateCustomerResponseDto;
 import pe.ibk.cpe.customer.application.rest.customer.dto.CustomerMapper;
+import pe.ibk.cpe.customer.domain.core.entity.Customer;
+import pe.ibk.cpe.customer.domain.service.ports.inbound.CreateCustomerUseCase;
 
 @RestController
 @RequestMapping("api/v1/customer")

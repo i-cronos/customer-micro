@@ -1,7 +1,7 @@
 package pe.ibk.cpe.customer.application.rest.customer.dto;
 
 import org.springframework.stereotype.Component;
-import pe.ibk.cpe.customer.domain.model.entity.Customer;
+import pe.ibk.cpe.customer.domain.core.entity.Customer;
 
 @Component
 public class CustomerMapper {

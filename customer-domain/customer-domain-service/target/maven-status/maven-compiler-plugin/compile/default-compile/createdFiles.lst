@@ -1,0 +1,9 @@
+pe/ibk/cpe/customer/domain/service/services/GetCustomerService.class
+pe/ibk/cpe/customer/domain/service/ports/inbound/CreateCustomerUseCase.class
+pe/ibk/cpe/customer/domain/service/ports/inbound/DeleteCustomerUseCase.class
+pe/ibk/cpe/customer/domain/service/ports/outbound/CreateCustomerPort.class
+pe/ibk/cpe/customer/domain/service/services/CreateCustomerService.class
+pe/ibk/cpe/customer/domain/service/ports/inbound/GetCustomerUseCase.class
+pe/ibk/cpe/customer/domain/service/services/DeleteCustomerService.class
+pe/ibk/cpe/customer/domain/service/ports/outbound/GetCustomerPort.class
+pe/ibk/cpe/customer/domain/service/ports/outbound/DeleteCustomerPort.class

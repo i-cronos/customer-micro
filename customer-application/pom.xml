@@ -22,11 +22,15 @@
         </dependency>
         <dependency>
             <groupId>pe.ibk.cpe</groupId>
-            <artifactId>customer-domain</artifactId>
+            <artifactId>customer-domain-core</artifactId>
         </dependency>
         <dependency>
             <groupId>pe.ibk.cpe</groupId>
-            <artifactId>customer-infrastructure</artifactId>
+            <artifactId>customer-domain-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>pe.ibk.cpe</groupId>
+            <artifactId>customer-infrastructure-database</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

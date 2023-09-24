@@ -2,15 +2,15 @@ package pe.ibk.cpe.customer.application.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import pe.ibk.cpe.customer.domain.ports.inbound.CreateCustomerUseCase;
-import pe.ibk.cpe.customer.domain.ports.inbound.DeleteCustomerUseCase;
-import pe.ibk.cpe.customer.domain.ports.inbound.GetCustomerUseCase;
-import pe.ibk.cpe.customer.domain.ports.outbound.CreateCustomerPort;
-import pe.ibk.cpe.customer.domain.ports.outbound.DeleteCustomerPort;
-import pe.ibk.cpe.customer.domain.ports.outbound.GetCustomerPort;
-import pe.ibk.cpe.customer.domain.service.CreateCustomerService;
-import pe.ibk.cpe.customer.domain.service.DeleteCustomerService;
-import pe.ibk.cpe.customer.domain.service.GetCustomerService;
+import pe.ibk.cpe.customer.domain.service.ports.inbound.CreateCustomerUseCase;
+import pe.ibk.cpe.customer.domain.service.ports.inbound.DeleteCustomerUseCase;
+import pe.ibk.cpe.customer.domain.service.ports.inbound.GetCustomerUseCase;
+import pe.ibk.cpe.customer.domain.service.ports.outbound.CreateCustomerPort;
+import pe.ibk.cpe.customer.domain.service.ports.outbound.DeleteCustomerPort;
+import pe.ibk.cpe.customer.domain.service.ports.outbound.GetCustomerPort;
+import pe.ibk.cpe.customer.domain.service.services.CreateCustomerService;
+import pe.ibk.cpe.customer.domain.service.services.DeleteCustomerService;
+import pe.ibk.cpe.customer.domain.service.services.GetCustomerService;
 
 @Configuration
 public class CustomerUseCaseConfig {

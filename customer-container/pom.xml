@@ -20,7 +20,11 @@
     <dependencies>
         <dependency>
             <groupId>pe.ibk.cpe</groupId>
-            <artifactId>customer-domain</artifactId>
+            <artifactId>customer-domain-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>pe.ibk.cpe</groupId>
+            <artifactId>customer-domain-service</artifactId>
         </dependency>
         <dependency>
             <groupId>pe.ibk.cpe</groupId>
@@ -28,7 +32,15 @@
         </dependency>
         <dependency>
             <groupId>pe.ibk.cpe</groupId>
-            <artifactId>customer-infrastructure</artifactId>
+            <artifactId>customer-infrastructure-database</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>pe.ibk.cpe</groupId>
+            <artifactId>customer-infrastructure-rest</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>pe.ibk.cpe</groupId>
+            <artifactId>customer-infrastructure-sftp</artifactId>
         </dependency>
     </dependencies>
 
