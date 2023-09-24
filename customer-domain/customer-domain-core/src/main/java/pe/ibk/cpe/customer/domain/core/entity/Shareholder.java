@@ -1,6 +1,6 @@
 package pe.ibk.cpe.customer.domain.core.entity;
 
-import pe.ibk.cpe.customer.domain.core.valueobject.DocumentType;
+import pe.ibk.cpe.customer.domain.core.valueobject.Document;
 import pe.ibk.cpe.customer.domain.core.valueobject.Percentage;
 import pe.ibk.cpe.customer.domain.core.valueobject.ShareholderId;
 import pe.ibk.cpe.dependencies.domain.BaseEntity;
@@ -8,7 +8,7 @@ import pe.ibk.cpe.dependencies.domain.BaseEntity;
 public class Shareholder extends BaseEntity<ShareholderId> {
     private String firstName;
     private String lastName;
-    private DocumentType documentType;
+    private Document document;
     private Percentage percentage;
 
     public String getFirstName() {
@@ -27,12 +27,12 @@ public class Shareholder extends BaseEntity<ShareholderId> {
         this.lastName = lastName;
     }
 
-    public DocumentType getDocumentType() {
-        return documentType;
+    public Document getDocument() {
+        return document;
     }
 
-    public void setDocumentType(DocumentType documentType) {
-        this.documentType = documentType;
+    public void setDocument(Document document) {
+        this.document = document;
     }
 
     public Percentage getPercentage() {

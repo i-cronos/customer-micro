@@ -14,6 +14,14 @@ public class Email {
         this.email = email;
     }
 
+    public EmailType getType() {
+        return type;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     public void validate() {
         if (Objects.isNull(type))
             throw new DomainException("Null email type");
