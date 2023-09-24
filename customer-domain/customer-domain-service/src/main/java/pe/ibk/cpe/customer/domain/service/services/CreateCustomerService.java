@@ -24,6 +24,8 @@ public class CreateCustomerService implements CreateCustomerUseCase {
 
     @Override
     public Customer apply(Customer customer) {
+        customer.validate();
+
         boolean isRisk = verifyRiskCustomerPort.apply(customer.getDocument());
 
         if (isRisk)

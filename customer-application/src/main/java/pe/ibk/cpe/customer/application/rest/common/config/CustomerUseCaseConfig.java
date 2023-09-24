@@ -1,4 +1,4 @@
-package pe.ibk.cpe.customer.application.rest.config;
+package pe.ibk.cpe.customer.application.rest.common.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

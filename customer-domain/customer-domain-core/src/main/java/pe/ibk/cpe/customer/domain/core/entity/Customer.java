@@ -121,7 +121,7 @@ public class Customer extends AggregateRoot<CustomerId> {
                 .get();
 
         if (!Constant.MAX_SHAREHOLDERS_PERCENTAGE.equals(sum))
-            throw new DomainException("Shareholders percentage is not 100%, sum : " + sum);
+            throw new DomainException("Shareholders percentage is not 100%, sum : " + sum + "%");
     }
 
 }

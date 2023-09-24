@@ -1,4 +1,4 @@
-package pe.ibk.cpe.customer.application.rest.property;
+package pe.ibk.cpe.customer.application.rest.common.property;
 
 import lombok.Getter;
 import lombok.Setter;
