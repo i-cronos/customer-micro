@@ -5,9 +5,6 @@ import pe.ibk.cpe.customer.domain.core.valueobject.ContactId;
 import pe.ibk.cpe.customer.domain.core.valueobject.Email;
 import pe.ibk.cpe.customer.domain.core.valueobject.Phone;
 import pe.ibk.cpe.dependencies.domain.BaseEntity;
-import pe.ibk.cpe.dependencies.exception.DomainException;
-
-import java.util.Objects;
 
 public class Contact extends BaseEntity<ContactId> {
     private Phone phone;
@@ -30,14 +27,7 @@ public class Contact extends BaseEntity<ContactId> {
     }
 
     public void validate() {
-        if (Objects.isNull(phone))
-            throw new DomainException("Null phone");
-
         phone.validate();
-
-        if (Objects.isNull(email))
-            throw new DomainException("Null email");
-
         email.validate();
     }
 

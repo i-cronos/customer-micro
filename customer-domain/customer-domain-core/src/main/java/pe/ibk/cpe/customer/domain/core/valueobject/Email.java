@@ -23,12 +23,6 @@ public class Email {
     }
 
     public void validate() {
-        if (Objects.isNull(type))
-            throw new DomainException("Null email type");
-
-        if (Objects.isNull(email))
-            throw new DomainException("Null email");
-
         if (!RegExpressionUtil.match(email, RegExpressionUtil.EMAIL))
             throw new DomainException("No valid email : " + email);
 

@@ -5,7 +5,6 @@ import pe.ibk.cpe.customer.domain.core.common.Constant;
 import pe.ibk.cpe.customer.domain.core.valueobject.BusinessName;
 import pe.ibk.cpe.customer.domain.core.valueobject.CustomerId;
 import pe.ibk.cpe.customer.domain.core.valueobject.Document;
-import pe.ibk.cpe.customer.domain.core.valueobject.DocumentType;
 import pe.ibk.cpe.dependencies.domain.AggregateRoot;
 import pe.ibk.cpe.dependencies.exception.DomainException;
 
@@ -61,42 +60,16 @@ public class Customer extends AggregateRoot<CustomerId> {
     }
 
     public void validate() {
-        validateBusinessName();
         validateDocument();
-        validateAddress();
         validateContacts();
         validateShareHolders();
     }
 
-    private void validateBusinessName() {
-        if (Objects.isNull(businessName))
-            throw new DomainException("Null business name");
-
-        if (Objects.isNull(businessName.getName()))
-            throw new DomainException("Null business name value");
-
-        if (Objects.isNull(businessName.getSocietyType()))
-            throw new DomainException("Null society type");
-    }
-
     private void validateDocument() {
-        if (Objects.isNull(document))
-            throw new DomainException("Null document");
-
         document.validate();
     }
 
-    private void validateAddress() {
-        if (Objects.isNull(address))
-            throw new DomainException("Null address");
-
-        address.validate();
-    }
-
     private void validateContacts() {
-        if (Objects.isNull(contact))
-            throw new DomainException("Null contact");
-
         contact.validate();
     }
 

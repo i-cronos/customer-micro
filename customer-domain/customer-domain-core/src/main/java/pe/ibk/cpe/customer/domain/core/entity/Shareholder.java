@@ -4,9 +4,6 @@ import pe.ibk.cpe.customer.domain.core.valueobject.Document;
 import pe.ibk.cpe.customer.domain.core.valueobject.Percentage;
 import pe.ibk.cpe.customer.domain.core.valueobject.ShareholderId;
 import pe.ibk.cpe.dependencies.domain.BaseEntity;
-import pe.ibk.cpe.dependencies.exception.DomainException;
-
-import java.util.Objects;
 
 public class Shareholder extends BaseEntity<ShareholderId> {
     private String firstName;
@@ -47,15 +44,6 @@ public class Shareholder extends BaseEntity<ShareholderId> {
     }
 
     public void validate() {
-        if (Objects.isNull(firstName))
-            throw new DomainException("Shareholder first name is null");
-
-        if (Objects.isNull(lastName))
-            throw new DomainException("Shareholder last name is null");
-
-        if (Objects.isNull(document))
-            throw new DomainException("Shareholder document is null");
-
         document.validate();
     }
 }
