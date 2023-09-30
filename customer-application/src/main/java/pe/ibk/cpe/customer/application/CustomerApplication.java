@@ -16,6 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
         HibernateJpaAutoConfiguration.class})
 @ComponentScan(basePackages = {
         "pe.ibk.cpe.customer.application",
+        "pe.ibk.cpe.customer.domain.service",
         "pe.ibk.cpe.customer.infrastructure.database",
         "pe.ibk.cpe.customer.infrastructure.rest",
         "pe.ibk.cpe.customer.infrastructure.email"

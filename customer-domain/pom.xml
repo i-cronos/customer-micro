@@ -22,5 +22,4 @@
         <module>customer-domain-core</module>
         <module>customer-domain-service</module>
     </modules>
-
 </project>
