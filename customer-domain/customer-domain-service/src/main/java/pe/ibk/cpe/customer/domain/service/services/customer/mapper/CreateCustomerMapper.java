@@ -6,7 +6,6 @@ import pe.ibk.cpe.customer.domain.core.customer.entity.Contact;
 import pe.ibk.cpe.customer.domain.core.customer.entity.Customer;
 import pe.ibk.cpe.customer.domain.core.customer.entity.Shareholder;
 import pe.ibk.cpe.customer.domain.core.customer.valueobject.*;
-import pe.ibk.cpe.customer.domain.core.valueobject.*;
 import pe.ibk.cpe.customer.domain.service.services.customer.dto.CreateCustomerRequest;
 import pe.ibk.cpe.customer.domain.service.services.customer.dto.CreateCustomerResponse;
 
