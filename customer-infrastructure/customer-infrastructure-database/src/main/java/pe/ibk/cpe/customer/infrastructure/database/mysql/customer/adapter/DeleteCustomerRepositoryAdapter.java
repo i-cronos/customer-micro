@@ -2,7 +2,7 @@ package pe.ibk.cpe.customer.infrastructure.database.mysql.customer.adapter;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
-import pe.ibk.cpe.customer.domain.core.valueobject.CustomerId;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.CustomerId;
 import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.DeleteCustomerRepositoryPort;
 import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.entity.CustomerEntity;
 import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.repository.CustomerRepository;

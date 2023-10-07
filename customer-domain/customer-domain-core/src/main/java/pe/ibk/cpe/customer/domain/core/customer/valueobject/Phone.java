@@ -1,4 +1,4 @@
-package pe.ibk.cpe.customer.domain.core.valueobject;
+package pe.ibk.cpe.customer.domain.core.customer.valueobject;
 
 
 import pe.ibk.cpe.dependencies.exception.DomainException;

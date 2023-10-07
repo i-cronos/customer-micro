@@ -1,10 +1,11 @@
 package pe.ibk.cpe.customer.domain.service.services.customer.mapper;
 
 import org.springframework.stereotype.Component;
-import pe.ibk.cpe.customer.domain.core.entity.Address;
-import pe.ibk.cpe.customer.domain.core.entity.Contact;
-import pe.ibk.cpe.customer.domain.core.entity.Customer;
-import pe.ibk.cpe.customer.domain.core.entity.Shareholder;
+import pe.ibk.cpe.customer.domain.core.customer.entity.Address;
+import pe.ibk.cpe.customer.domain.core.customer.entity.Contact;
+import pe.ibk.cpe.customer.domain.core.customer.entity.Customer;
+import pe.ibk.cpe.customer.domain.core.customer.entity.Shareholder;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.*;
 import pe.ibk.cpe.customer.domain.core.valueobject.*;
 import pe.ibk.cpe.customer.domain.service.services.customer.dto.CreateCustomerRequest;
 import pe.ibk.cpe.customer.domain.service.services.customer.dto.CreateCustomerResponse;

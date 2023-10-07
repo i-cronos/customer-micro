@@ -4,7 +4,7 @@ package pe.ibk.cpe.customer.domain.service.services.customer;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import pe.ibk.cpe.customer.domain.core.valueobject.CustomerId;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.CustomerId;
 import pe.ibk.cpe.customer.domain.service.ports.inbound.customer.DeleteCustomerUseCase;
 import pe.ibk.cpe.customer.domain.service.services.customer.dto.DeleteCustomerRequest;
 import pe.ibk.cpe.customer.domain.service.services.customer.dto.DeleteCustomerResponse;

@@ -1,9 +1,7 @@
-package pe.ibk.cpe.customer.domain.core.valueobject;
+package pe.ibk.cpe.customer.domain.core.customer.valueobject;
 
 import pe.ibk.cpe.dependencies.exception.DomainException;
 import pe.ibk.cpe.dependencies.util.RegExpressionUtil;
-
-import java.util.Objects;
 
 public class Email {
     private final EmailType type;

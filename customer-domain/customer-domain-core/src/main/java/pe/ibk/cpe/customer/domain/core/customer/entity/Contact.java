@@ -1,9 +1,9 @@
-package pe.ibk.cpe.customer.domain.core.entity;
+package pe.ibk.cpe.customer.domain.core.customer.entity;
 
 
-import pe.ibk.cpe.customer.domain.core.valueobject.ContactId;
-import pe.ibk.cpe.customer.domain.core.valueobject.Email;
-import pe.ibk.cpe.customer.domain.core.valueobject.Phone;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.ContactId;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.Email;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.Phone;
 import pe.ibk.cpe.dependencies.domain.BaseEntity;
 
 public class Contact extends BaseEntity<ContactId> {

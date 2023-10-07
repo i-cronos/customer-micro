@@ -1,8 +1,8 @@
-package pe.ibk.cpe.customer.domain.core.entity;
+package pe.ibk.cpe.customer.domain.core.customer.entity;
 
-import pe.ibk.cpe.customer.domain.core.valueobject.Document;
-import pe.ibk.cpe.customer.domain.core.valueobject.Percentage;
-import pe.ibk.cpe.customer.domain.core.valueobject.ShareholderId;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.ShareholderId;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.Document;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.Percentage;
 import pe.ibk.cpe.dependencies.domain.BaseEntity;
 
 public class Shareholder extends BaseEntity<ShareholderId> {

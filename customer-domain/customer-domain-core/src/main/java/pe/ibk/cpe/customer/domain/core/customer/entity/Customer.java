@@ -1,10 +1,10 @@
-package pe.ibk.cpe.customer.domain.core.entity;
+package pe.ibk.cpe.customer.domain.core.customer.entity;
 
 
 import pe.ibk.cpe.customer.domain.core.common.Constant;
-import pe.ibk.cpe.customer.domain.core.valueobject.BusinessName;
-import pe.ibk.cpe.customer.domain.core.valueobject.CustomerId;
-import pe.ibk.cpe.customer.domain.core.valueobject.Document;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.BusinessName;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.CustomerId;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.Document;
 import pe.ibk.cpe.dependencies.domain.AggregateRoot;
 import pe.ibk.cpe.dependencies.exception.DomainException;
 

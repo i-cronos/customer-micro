@@ -1,7 +1,7 @@
-package pe.ibk.cpe.customer.domain.core.entity;
+package pe.ibk.cpe.customer.domain.core.customer.entity;
 
 
-import pe.ibk.cpe.customer.domain.core.valueobject.AddressId;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.AddressId;
 import pe.ibk.cpe.dependencies.domain.BaseEntity;
 
 public class Address extends BaseEntity<AddressId> {

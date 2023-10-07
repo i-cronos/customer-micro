@@ -2,7 +2,7 @@ package pe.ibk.cpe.customer.domain.service.services.customer.handler;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
-import pe.ibk.cpe.customer.domain.core.entity.Customer;
+import pe.ibk.cpe.customer.domain.core.customer.entity.Customer;
 import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.CreateCustomerRepositoryPort;
 import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.NotifyCustomerCreationPort;
 import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.VerifyRiskCustomerPort;

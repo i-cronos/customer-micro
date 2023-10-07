@@ -1,7 +1,7 @@
 package pe.ibk.cpe.customer.infrastructure.rest.local;
 
 import org.springframework.stereotype.Component;
-import pe.ibk.cpe.customer.domain.core.valueobject.Document;
+import pe.ibk.cpe.customer.domain.core.customer.valueobject.Document;
 import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.VerifyRiskCustomerPort;
 
 @Component

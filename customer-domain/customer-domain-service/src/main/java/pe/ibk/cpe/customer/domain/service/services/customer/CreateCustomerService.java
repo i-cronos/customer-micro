@@ -4,7 +4,7 @@ package pe.ibk.cpe.customer.domain.service.services.customer;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import pe.ibk.cpe.customer.domain.core.entity.Customer;
+import pe.ibk.cpe.customer.domain.core.customer.entity.Customer;
 import pe.ibk.cpe.customer.domain.service.ports.inbound.customer.CreateCustomerUseCase;
 import pe.ibk.cpe.customer.domain.service.services.customer.dto.CreateCustomerRequest;
 import pe.ibk.cpe.customer.domain.service.services.customer.dto.CreateCustomerResponse;
