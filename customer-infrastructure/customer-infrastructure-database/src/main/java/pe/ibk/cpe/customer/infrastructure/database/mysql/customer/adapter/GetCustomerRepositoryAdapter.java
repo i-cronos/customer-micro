@@ -1,20 +1,20 @@
-package pe.ibk.cpe.customer.infrastructure.database.mysql;
+package pe.ibk.cpe.customer.infrastructure.database.mysql.customer.adapter;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 import pe.ibk.cpe.customer.domain.core.entity.Customer;
 import pe.ibk.cpe.customer.domain.core.valueobject.CustomerId;
-import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.GetCustomerPort;
-import pe.ibk.cpe.customer.infrastructure.database.mysql.repository.CustomerEntity;
-import pe.ibk.cpe.customer.infrastructure.database.mysql.repository.CustomerEntityMapper;
-import pe.ibk.cpe.customer.infrastructure.database.mysql.repository.CustomerRepository;
+import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.GetCustomerRepositoryPort;
+import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.entity.CustomerEntity;
+import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.mapper.CustomerEntityMapper;
+import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.repository.CustomerRepository;
 import pe.ibk.cpe.dependencies.exception.DomainException;
 
 import java.util.Optional;
 
 @Component
 @AllArgsConstructor
-public class GetCustomerAdapter implements GetCustomerPort {
+public class GetCustomerRepositoryAdapter implements GetCustomerRepositoryPort {
 
     private final CustomerRepository customerRepository;
     private final CustomerEntityMapper customerEntityMapper;

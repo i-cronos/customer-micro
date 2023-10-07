@@ -1,8 +1,9 @@
-package pe.ibk.cpe.customer.infrastructure.database.mysql.repository;
+package pe.ibk.cpe.customer.infrastructure.database.mysql.customer.mapper;
 
 import org.springframework.stereotype.Component;
 import pe.ibk.cpe.customer.domain.core.entity.Customer;
 import pe.ibk.cpe.customer.domain.core.valueobject.*;
+import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.entity.CustomerEntity;
 
 import java.util.UUID;
 

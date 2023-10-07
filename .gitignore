@@ -87,3 +87,4 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 *.iml
+/customer-application/src/main/java/pe/ibk/cpe/customer/application/rest/controller/package-info.java

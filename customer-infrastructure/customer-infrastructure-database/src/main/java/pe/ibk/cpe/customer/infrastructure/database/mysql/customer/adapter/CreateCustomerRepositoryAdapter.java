@@ -1,17 +1,17 @@
-package pe.ibk.cpe.customer.infrastructure.database.mysql;
+package pe.ibk.cpe.customer.infrastructure.database.mysql.customer.adapter;
 
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 import pe.ibk.cpe.customer.domain.core.entity.Customer;
-import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.CreateCustomerPort;
-import pe.ibk.cpe.customer.infrastructure.database.mysql.repository.CustomerEntity;
-import pe.ibk.cpe.customer.infrastructure.database.mysql.repository.CustomerEntityMapper;
-import pe.ibk.cpe.customer.infrastructure.database.mysql.repository.CustomerRepository;
+import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.CreateCustomerRepositoryPort;
+import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.entity.CustomerEntity;
+import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.mapper.CustomerEntityMapper;
+import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.repository.CustomerRepository;
 
 @Component
 @AllArgsConstructor
-public class CreateCustomerAdapter implements CreateCustomerPort {
+public class CreateCustomerRepositoryAdapter implements CreateCustomerRepositoryPort {
 
     private final CustomerRepository customerRepository;
     private final CustomerEntityMapper customerEntityMapper;

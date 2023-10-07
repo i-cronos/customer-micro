@@ -1,4 +1,4 @@
-package pe.ibk.cpe.customer.infrastructure.database.mysql.repository;
+package pe.ibk.cpe.customer.infrastructure.database.mysql.customer.entity;
 
 import lombok.Getter;
 import lombok.Setter;

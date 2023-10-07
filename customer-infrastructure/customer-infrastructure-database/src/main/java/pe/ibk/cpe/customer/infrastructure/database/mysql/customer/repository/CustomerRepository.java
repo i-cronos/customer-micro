@@ -1,6 +1,7 @@
-package pe.ibk.cpe.customer.infrastructure.database.mysql.repository;
+package pe.ibk.cpe.customer.infrastructure.database.mysql.customer.repository;
 
 import org.springframework.stereotype.Component;
+import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.entity.CustomerEntity;
 
 import java.util.Optional;
 import java.util.UUID;
