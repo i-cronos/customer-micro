@@ -8,7 +8,8 @@ import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.NotifyCustomer
 import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.VerifyRiskCustomerPort;
 import pe.ibk.cpe.customer.domain.service.services.customer.dto.CreateCustomerResponse;
 import pe.ibk.cpe.customer.domain.service.services.customer.mapper.CreateCustomerMapper;
-import pe.ibk.cpe.dependencies.exception.DomainException;
+import pe.ibk.cpe.dependencies.common.exception.BaseException;
+import pe.ibk.cpe.dependencies.common.exception.DomainException;
 
 @Component
 @AllArgsConstructor
@@ -22,7 +23,10 @@ public class CreateCustomerHandler {
         boolean isRisk = verifyRiskCustomerPort.apply(customer.getDocument());
 
         if (isRisk)
-            throw new DomainException("Risk Customer");
+            throw new DomainException(BaseException.Error.builder()
+                    .systemMessage("Risk Customer : " + customer.getBusinessName())
+                    .userMessage("Risk Customer")
+                    .build());
 
         Customer response = createCustomerRepositoryPort.apply(customer);
 

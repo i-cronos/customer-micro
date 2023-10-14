@@ -46,6 +46,11 @@
             <groupId>pe.ibk.cpe</groupId>
             <artifactId>customer-infrastructure-email</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>pe.ibk.cpe</groupId>
+            <artifactId>cpe-dependencies-application</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

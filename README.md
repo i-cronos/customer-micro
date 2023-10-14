@@ -14,6 +14,7 @@
 >        * mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-rest
 >        * mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-email
 >        * mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-sftp
+>        * mvn archetype:generate -DgroupId=pe.ibk.cpe -DartifactId=customer-infrastructure-security
 
 ## Example
 ***

@@ -2,7 +2,7 @@ package pe.ibk.cpe.customer.domain.core.customer.entity;
 
 
 import pe.ibk.cpe.customer.domain.core.customer.valueobject.AddressId;
-import pe.ibk.cpe.dependencies.domain.BaseEntity;
+import pe.ibk.cpe.dependencies.domain.entity.BaseEntity;
 
 public class Address extends BaseEntity<AddressId> {
     private String streetName;

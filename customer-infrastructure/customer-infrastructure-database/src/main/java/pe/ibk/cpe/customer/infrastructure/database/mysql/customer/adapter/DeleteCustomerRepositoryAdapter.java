@@ -6,7 +6,8 @@ import pe.ibk.cpe.customer.domain.core.customer.valueobject.CustomerId;
 import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.DeleteCustomerRepositoryPort;
 import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.entity.CustomerEntity;
 import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.repository.CustomerRepository;
-import pe.ibk.cpe.dependencies.exception.DomainException;
+import pe.ibk.cpe.dependencies.common.exception.BaseException;
+import pe.ibk.cpe.dependencies.common.exception.DomainException;
 
 import java.util.Optional;
 
@@ -21,7 +22,10 @@ public class DeleteCustomerRepositoryAdapter implements DeleteCustomerRepository
         Optional<CustomerEntity> optionalEntity = customerRepository.findById(customerId.getValue().toString());
 
         if (!optionalEntity.isPresent())
-            throw new DomainException("No found customer, id : " + customerId.getValue());
+            throw new DomainException(BaseException.Error.builder()
+                    .systemMessage("No found customer, id : " + customerId.getValue())
+                    .userMessage("Not found customer")
+                    .build());
 
         try {
             customerRepository.delete(optionalEntity.get());

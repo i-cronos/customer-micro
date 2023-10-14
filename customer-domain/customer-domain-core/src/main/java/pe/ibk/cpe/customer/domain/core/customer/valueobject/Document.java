@@ -1,6 +1,7 @@
 package pe.ibk.cpe.customer.domain.core.customer.valueobject;
 
-import pe.ibk.cpe.dependencies.exception.DomainException;
+import pe.ibk.cpe.dependencies.common.exception.BaseException;
+import pe.ibk.cpe.dependencies.common.exception.DomainException;
 
 public class Document {
     private final DocumentType documentType;
@@ -21,10 +22,16 @@ public class Document {
 
     public void validate() {
         if (documentType.equals(DocumentType.DNI) && documentNumber.length() != DocumentType.DNI.getSize())
-            throw new DomainException("No valid document, required size: " + DocumentType.DNI.getSize());
+            throw new DomainException(BaseException.Error.builder()
+                    .systemMessage("No valid document, required size: " + DocumentType.DNI.getSize())
+                    .userMessage("No valid dni")
+                    .build());
 
         if (documentType.equals(DocumentType.RUC) && documentNumber.length() != DocumentType.RUC.getSize())
-            throw new DomainException("No valid document, required size: " + DocumentType.RUC.getSize());
+            throw new DomainException(BaseException.Error.builder()
+                    .systemMessage("No valid document, required size: " + DocumentType.RUC.getSize())
+                    .userMessage("Not valid ruc")
+                    .build());
     }
 
 }

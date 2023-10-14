@@ -1,7 +1,5 @@
 package pe.ibk.cpe.customer.domain.core.customer.valueobject;
 
-import pe.ibk.cpe.dependencies.exception.DomainException;
-import pe.ibk.cpe.dependencies.util.RegExpressionUtil;
 
 public class Email {
     private final EmailType type;
@@ -19,12 +17,5 @@ public class Email {
     public String getEmail() {
         return email;
     }
-
-    public void validate() {
-        if (!RegExpressionUtil.match(email, RegExpressionUtil.EMAIL))
-            throw new DomainException("No valid email : " + email);
-
-    }
-
 
 }

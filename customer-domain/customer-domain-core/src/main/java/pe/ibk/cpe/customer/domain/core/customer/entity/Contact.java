@@ -4,7 +4,7 @@ package pe.ibk.cpe.customer.domain.core.customer.entity;
 import pe.ibk.cpe.customer.domain.core.customer.valueobject.ContactId;
 import pe.ibk.cpe.customer.domain.core.customer.valueobject.Email;
 import pe.ibk.cpe.customer.domain.core.customer.valueobject.Phone;
-import pe.ibk.cpe.dependencies.domain.BaseEntity;
+import pe.ibk.cpe.dependencies.domain.entity.BaseEntity;
 
 public class Contact extends BaseEntity<ContactId> {
     private Phone phone;
@@ -25,10 +25,4 @@ public class Contact extends BaseEntity<ContactId> {
     public void setEmail(Email email) {
         this.email = email;
     }
-
-    public void validate() {
-        phone.validate();
-        email.validate();
-    }
-
 }

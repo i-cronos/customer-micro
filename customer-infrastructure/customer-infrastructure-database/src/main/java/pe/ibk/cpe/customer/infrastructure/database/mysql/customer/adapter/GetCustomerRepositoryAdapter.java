@@ -8,7 +8,8 @@ import pe.ibk.cpe.customer.domain.service.ports.outbound.customer.GetCustomerRep
 import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.entity.CustomerEntity;
 import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.mapper.CustomerEntityMapper;
 import pe.ibk.cpe.customer.infrastructure.database.mysql.customer.repository.CustomerRepository;
-import pe.ibk.cpe.dependencies.exception.DomainException;
+import pe.ibk.cpe.dependencies.common.exception.BaseException;
+import pe.ibk.cpe.dependencies.common.exception.DomainException;
 
 import java.util.Optional;
 
@@ -23,7 +24,10 @@ public class GetCustomerRepositoryAdapter implements GetCustomerRepositoryPort {
     public Customer apply(CustomerId customerId) {
         Optional<CustomerEntity> optionalEntity = customerRepository.findById(customerId.getValue().toString());
 
-        CustomerEntity entity = optionalEntity.orElseThrow(() -> new DomainException("Not found customer, id : " + customerId));
+        CustomerEntity entity = optionalEntity.orElseThrow(() -> new DomainException(BaseException.Error.builder()
+                .systemMessage("Not found customer, id : " + customerId)
+                .userMessage("No found customer")
+                .build()));
 
         return customerEntityMapper.map(entity);
     }
