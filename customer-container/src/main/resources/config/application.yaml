@@ -1,7 +1,17 @@
+server:
+  port: 8080
+
+token-general:
+  security:
+    config:
+      issuer: CPE
+      key: LostToken!3.141516
+
 app:
   security:
     config:
+      enabled: true
       path:
-        public-path: /api/public/customer/
-        protected-path: /api/protected/customer/
-        private-path: /api/private/customer/
+        public-path: /api/public/customer/**
+        protected-path: /api/protected/customer/**
+        private-path: /api/private/customer/**

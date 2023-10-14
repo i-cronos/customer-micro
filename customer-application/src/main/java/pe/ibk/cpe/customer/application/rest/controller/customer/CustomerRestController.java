@@ -11,7 +11,7 @@ import pe.ibk.cpe.customer.domain.service.services.customer.dto.CreateCustomerRe
 import pe.ibk.cpe.customer.domain.service.services.customer.dto.CreateCustomerResponse;
 
 @RestController
-@RequestMapping("api/v1/customer")
+@RequestMapping("/api/protected/customer/v1.0")
 @AllArgsConstructor
 public class CustomerRestController {
     private final CreateCustomerUseCase createCustomerUseCase;

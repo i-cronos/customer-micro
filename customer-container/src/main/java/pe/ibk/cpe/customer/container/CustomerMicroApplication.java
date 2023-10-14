@@ -21,7 +21,8 @@ import org.springframework.context.annotation.ComponentScan;
                 "pe.ibk.cpe.customer.infrastructure.database",
                 "pe.ibk.cpe.customer.infrastructure.email",
                 "pe.ibk.cpe.customer.infrastructure.rest",
-                "pe.ibk.cpe.customer.infrastructure.sftp"
+                "pe.ibk.cpe.customer.infrastructure.sftp",
+                "pe.ibk.cpe.dependencies.infrastructure.security.config"
         }
 )
 public class CustomerMicroApplication {
