@@ -1,4 +1,4 @@
-package pe.ibk.cpe.customer.application.rest.common.exception;
+package pe.ibk.cpe.customer.application.rest.common;
 
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import pe.ibk.cpe.dependencies.application.advice.ApplicationControllerAdvice;

@@ -1,4 +1,7 @@
 app:
-  info:
-    name: "Customer microservice"
-    env: "None"
+  security:
+    config:
+      path:
+        public-path: /api/public/customer/
+        protected-path: /api/protected/customer/
+        private-path: /api/private/customer/
