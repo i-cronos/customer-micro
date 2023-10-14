@@ -7,6 +7,7 @@
 /customer-infrastructure/customer-infrastructure-rest/target/
 /customer-infrastructure/customer-infrastructure-sftp/target/
 /customer-infrastructure/customer-infrastructure-email/target/
+/customer-infrastructure/customer-infrastructure-security/target/
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
@@ -87,4 +88,4 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 *.iml
-/customer-application/src/main/java/pe/ibk/cpe/customer/application/rest/controller/package-info.java
+

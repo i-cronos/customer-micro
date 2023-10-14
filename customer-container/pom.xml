@@ -10,14 +10,17 @@
 
     <artifactId>customer-container</artifactId>
 
-    <packaging>pom</packaging>
-
     <name>customer-container</name>
 
     <properties>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>pe.ibk.cpe</groupId>
             <artifactId>customer-domain-core</artifactId>
@@ -40,34 +43,13 @@
         </dependency>
         <dependency>
             <groupId>pe.ibk.cpe</groupId>
+            <artifactId>customer-infrastructure-email</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>pe.ibk.cpe</groupId>
             <artifactId>customer-infrastructure-sftp</artifactId>
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy-app-jar</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>
-                                ${project.build.directory}/
-                            </outputDirectory>
-                            <includeArtifactIds>customer-application</includeArtifactIds>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-        </plugins>
-
-    </build>
 
 </project>

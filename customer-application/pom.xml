@@ -34,38 +34,11 @@
             <groupId>pe.ibk.cpe</groupId>
             <artifactId>customer-domain-service</artifactId>
         </dependency>
-        <dependency>
-            <groupId>pe.ibk.cpe</groupId>
-            <artifactId>customer-infrastructure-database</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>pe.ibk.cpe</groupId>
-            <artifactId>customer-infrastructure-rest</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>pe.ibk.cpe</groupId>
-            <artifactId>customer-infrastructure-email</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>pe.ibk.cpe</groupId>
             <artifactId>cpe-dependencies-application</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <!-- https://www.baeldung.com/docker-layers-spring-boot -->
-                    <layers>
-                        <enabled>true</enabled>
-                    </layers>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
