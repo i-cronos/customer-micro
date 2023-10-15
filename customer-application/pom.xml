@@ -27,6 +27,11 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>pe.ibk.cpe</groupId>
             <artifactId>customer-domain-core</artifactId>
         </dependency>
@@ -38,6 +43,11 @@
         <dependency>
             <groupId>pe.ibk.cpe</groupId>
             <artifactId>cpe-dependencies-application</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.ibk.cpe</groupId>
+            <artifactId>cpe-dependencies-common</artifactId>
         </dependency>
     </dependencies>
 
