@@ -20,9 +20,9 @@ public class CreateCustomerHandler {
     private final CreateCustomerMapper createCustomerMapper;
 
     public CreateCustomerResponse create(Customer customer) {
-        boolean isRisk = verifyRiskCustomerPort.apply(customer.getDocument());
+        boolean isRisky = verifyRiskCustomerPort.apply(customer.getDocument());
 
-        if (isRisk)
+        if (isRisky)
             throw new DomainException(BaseException.Error.builder()
                     .systemMessage("Risk Customer : " + customer.getBusinessName())
                     .userMessage("Risk Customer")
