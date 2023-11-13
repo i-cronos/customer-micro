@@ -79,7 +79,7 @@ public class Customer extends AggregateRoot<CustomerId> {
         Integer sum = shareholders.stream()
                 .map(s -> s.getPercentage().getValue())
                 .reduce(Integer::sum)
-                .get();
+                .orElse(0);
 
         if (!Constant.MAX_SHAREHOLDERS_PERCENTAGE.equals(sum))
             throw new DomainException(BaseException.Error.builder()
